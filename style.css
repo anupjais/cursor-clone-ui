@@ -1,0 +1,67 @@
+:root{
+    --feature-color: #c3bebe;
+    --feature-hovor-color: #827e7e;
+    --accent-color: #0c0b0b;
+    --accent-hover-color: #161313;
+    --accent-light: #ebe6e6;
+    --accent-hover-light: #adabab;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--accent-hover-color);
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    /* background-color: #1d1d1d; */
+    margin: 2px auto;
+    /* margin: 15px 0px; */
+    padding: 10px 0px;
+    /* border-radius: 8px; */
+    align-items: center;
+}
+
+nav div a{
+    text-decoration: none;
+    color: var(--feature-color);
+    margin-left: 15px;
+}
+
+nav div a:hover{
+    color: var(--feature-hovor-color);
+}
+
+nav button{
+    color: var(--feature-color);
+    padding: 5px 8px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 5px;
+    font-size: 14px;
+}
+#singin{
+    background-color: #000;
+    border: 0.5px solid #4c4b4b;
+}
+
+#singin:hover{
+    background-color: var(--accent-hover-color);
+}
+#download{
+    background-color: var(--accent-light);
+    color: #000;
+}
+
+#download:hover{
+    background-color: var(--accent-hover-light);
+}
