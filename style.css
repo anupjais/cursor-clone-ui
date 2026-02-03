@@ -3,8 +3,10 @@
     --feature-hovor-color: #827e7e;
     --accent-color: #0c0b0b;
     --accent-hover-color: #161313;
-    --accent-light: #ebe6e6;
-    --accent-hover-light: #adabab;
+    --accent-light: #dfdada;
+    --accent-hover-light: #b8b4b4;
+
+    --screenshot-img: 1300px;
 }
 
 *{
@@ -65,3 +67,82 @@ nav button{
 #download:hover{
     background-color: var(--accent-hover-light);
 }
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 100px auto 0;
+    gap: 20px;
+}
+
+.main-header h1{
+    font-size: 30px;
+    margin-top: 100px;
+    max-width: 700px;
+}
+
+.main-header button{
+    border: none;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.main-header button:hover{
+    background-color: var(--accent-hover-light);
+}
+
+.btn-wrapper{
+    /* display: flex; */
+    justify-content: flex-end;
+    
+}
+
+#symb{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.img-shoot {
+    width: 90%;
+    margin: 20px auto 0;
+    /* margin-top: 20px; */
+}
+
+.img-shoot img{
+    margin-top: 40px;
+    width: var(--screenshot-img);
+    border-radius: 5px;
+}
+
+.trusted-logos{
+    margin: 70px;
+}
+
+.trusted-logos p{
+    font-size: 14px;
+    text-align: center;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 12px;
+    padding: 10px;
+}
+
+.card img{
+    border: 1px solid #393838;
+    /* background-color: var(--accent-hover-color); */
+    background-color: #1e1d1d;
+    width: 156px;
+    height: 96px;
+    border-radius: 4px;
+    padding: 28px;
+}
+
