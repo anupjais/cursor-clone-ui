@@ -5,6 +5,8 @@
     --accent-hover-color: #161313;
     --accent-light: #dfdada;
     --accent-hover-light: #b8b4b4;
+    --text-color: #a7a4a4;
+    --text-para: #4e4b4b;
 
     --screenshot-img: 1300px;
 }
@@ -203,3 +205,78 @@ nav button{
     margin-left: 40px;
 }
 
+/* 5. Feature Cards Section */
+.freature-card{
+    /* width: ; */
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.freature-card h1 {
+    /* margin: 150px; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.freature-cards{
+    width: 90%;
+    margin: 10px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    /* border: 1px solid crimson; */
+    /* padding: 20px; */
+    
+}
+
+.f-card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    width: 430px;
+    height: 275px;
+    gap: 24px;
+    border: 1px solid #393838;
+    background-color: var(--accent-hover-color);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.f-card p{
+    font-size: 16px;
+}
+
+.f-card-img{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* margin-bottom: 20px; */
+    padding-top: 12px;
+    border-radius: 5px;
+    margin-top: auto;
+    /* padding: 50px; */
+}
+
+.f-card-img img{
+    /* width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px; */
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.f-card-img h3{
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.f-card-img p{
+    color: var(--text-para);
+    font-size: 13px;
+    margin-top: 4px;
+}
