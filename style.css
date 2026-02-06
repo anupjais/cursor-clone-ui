@@ -9,6 +9,7 @@
     --text-para: #4e4b4b;
 
     --screenshot-img: 1300px;
+    --border: #8d8989;
 }
 
 *{
@@ -33,7 +34,14 @@ nav{
     padding: 10px 0px;
     /* border-radius: 8px; */
     align-items: center;
+    
 }
+
+/* .fixed-nav{
+    position: fixed;
+    top: 0px;
+    background-color: var(--accent-hover-color);  
+} */
 
 nav div a{
     text-decoration: none;
@@ -407,4 +415,115 @@ nav button{
     /* border: 1px solid violet; */
     display: inline-block;
     margin-top: 30px;
+}
+
+/* 11. Footer */
+footer{
+    width: 90%;
+    margin: 15px auto;
+    
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* max-width: 1100px; */
+    margin: auto;
+    gap: 40px;
+    line-height: 2;
+}
+
+.foot div{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.foot span{
+    color: var(--text-para);
+}
+
+.foot ul{
+    list-style-type: none;
+}
+
+
+.foot a{
+    text-decoration: none;
+    color: #fff;
+    /* list-style: none; */
+    font-size: 14px;
+}
+
+
+/* footer small{
+    margin-left: 20px;
+} */
+
+.rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 12px 0; */
+    color: var(--text-para);
+    /* gap: 16px; */
+}
+
+.foot-meta{
+    display: flex;
+
+    gap: 16px;
+}
+
+.trust{
+    display: flex;
+    gap: 6px;
+}
+
+.trust a{
+    text-decoration: none;
+    color: var(--text-para);
+}
+
+.theme-lang{
+    margin-left: auto;
+    display: flex;
+    /* justify-content: right; */
+    align-items: center;
+    gap: 16px;
+}
+
+.icons{
+    display: flex;
+    border: solid var(--border);
+    border-radius: 40px;
+}
+
+/* .icons .sel-lang{
+    justify-content: right;
+} */
+
+.icons button {
+    background: transparent;
+    color: #e5e5e5;
+    padding: 6px 8px;
+    /* border-radius: 6px; */
+    cursor: pointer;
+    border: none;
+}
+
+.sel-lang select {
+background: #1b1b1b;
+/* background: var(--accent-color); */
+/* color: var(--text-color); */
+/* border: 1px solid var(--border);
+padding: 6px 8px;
+border-radius: 40px; */
+
+  color: #e5e5e5;
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  border-radius: 6px;
+  border-radius: 40px; 
 }
